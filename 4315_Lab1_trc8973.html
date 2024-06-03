@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<!-- Tahsin Rahman Chowdhury 
+1001758973 -->
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Special Coffee Connoisseur</title>
+    <style>
+      div {
+        float: left;
+        width: 70%;
+        color: black;
+        font-family: sans-serif;
+        font-size: 120%;
+        margin-left: 5%
+      }
+      img {
+        width: 20%;
+        height: auto;
+        border-radius: 50%;
+      }
+      table {
+        border: none;
+      }
+      h1,
+      h2,
+      h3,
+      form {
+        text-align: center;
+        color: red;
+        font-family:Impact;
+      }
+      li {
+        color: black;
+        text-align: left;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 600px;
+      }
+      ul {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 200px;
+      }
+      form {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body style="background-color: #4b371c">
+    <h1>We are elated that you chose Special Coffee Connoisseur!</h1>
+    <div>
+    Hey there, coffee lover!<br> We'd love to get to know you a bit better
+    so we can make your Special Coffee Connoisseur experience <br>even more amazing!
+    Just fill out the requested form at the top of the survey <br>
+    and let us know what you think about our fabulous coffee!<br>
+    We know your time is valuable, so to show our gratitude, <br>
+    we'll send you a gift voucher worth $5 via email!
+    Yup, you read that right!<br> Five bucks to spend on your next cup
+    of joe at Special Coffee Connoisseur! <br> 
+    So, what are you waiting for? Let's get started!
+    </div>
+    <img src="logo.jpg" alt="Coffee Logo" >
+    <br >
+    <hr >
+    <h3>Personal Information</h3>
+    <form>
+      <table style="margin-left:auto;margin-right:auto;">
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" name="fname" ></td>
+          <td>Last Name:</td>
+          <td><input type="text" name="lname" ></td>
+        </tr>
+        <tr>
+          <td>Email Address:</td>
+          <td><input type="email" name="email" placeholder ="tchowdhury29@gmail.com" ></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            Male<input type="radio" name="gender" value="male" > &nbsp;
+            Female<input type="radio" name="gender" value="female" >
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Age Group:</td>
+          <td colspan="2">
+            Under 21<input type="radio" name="age" value="under21" >
+            21-40<input type="radio" name="age" value="21-40" > Over 40<input
+              type="radio"
+              name="age"
+              value="over40"
+            >
+          </td>
+          <td></td>
+        </tr>
+      </table>
+      <hr >
+      <h2>
+        Please respond to the opinion statements using the following scale:
+      </h2>
+      <ul>
+        <li>1 = strongly agree</li>
+        <li>2 = somewhat agree</li>
+        <li>3 = neither agree nor disagree</li>
+        <li>4 = somewhat disagree</li>
+        <li>5 = strongly disagree</li>
+      </ul>
+      <br >
+      <ol>
+        <li>
+          Special Coffee Connoisseur coffees are always fresh
+          <select name="number" id="fresh">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </li>
+        <li>
+          Special Coffee Connoisseur dishes are decorated in an elegant way
+          <select name="number" id="decoration">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </li>
+        <li>
+          Special Coffee Connoisseur drinks are resonably priced
+          <select name="number" id="price">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </li>
+        <li>
+          Special Coffee Connoisseur beans are of the highest quality
+          <select name="number" id="quality">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </li>
+        <li>
+          Overall, I would recommend my friends about Special Coffee Connoisseur
+          <select name="number" id="recomendation">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </li>
+      </ol>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

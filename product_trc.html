@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Tahsin Rahman Chowdhury
+   INSY 4315-003 
+   1001758973-->
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Special Coffee Connoisseur Products</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+	  <link rel="stylesheet" type="text/css" href="prodTableStyle.css">
+   </head>
+   <body id="body">
+      <h1 id="h1">Thank You for Choosing Special Coffee Connoisseur ©</h1>
+      <h2 style="text-align: center;">Our Products</h2>
+      <img src="logo.jpg" alt="logo">
+      <center>
+   <table>
+      <tr>
+         <td><a href="index.html">Home</a></td>
+         <td><a href="product_trc.html">Product</a> </td>
+         <td><a href= "contact_trc.html">Contact Us</a></td>
+         <td><a href="about_trc.html">About Us</a></td>
+      </tr>
+   </table>
+</center>
+      <form action="#" style="text-align: center">
+      <div style="text-align: center; width: 90%;">
+         <br>
+         <p>
+         <table align="center">
+            <thead>
+               <tr>
+                  <th><a id="sortID" href="javascript:sortByID( )" style="text-decoration-line: underline; color: white;">Product ID</a></th>
+
+<th>Image</th>
+                  <th><a id="sortName" href="javascript:sortByName( )" style="text-decoration-line: underline; color: red">Product Name</a></th>
+
+<th><a style="text-decoration-line: underline; color: white">Product Description</a></th>
+                  <th><a id="sortPrice" href="javascript:sortByPrice( )" style="text-decoration-line: underline; color: red">Product Price</a></th>
+
+                  <th><a style="text-decoration-line: none; color: white">Quantity</a></th>
+            </thead>
+            (Click a Column Heading to Sort)
+            <tbody id = "tbodyRows" style="color: black;">
+            </tbody>
+         </table>
+         </p>
+      </div>
+      <p>
+         <input type="submit" value="Confirm" onclick = "javascript:confirmQty();">
+
+         <input type="reset" value="Reset">
+
+	
+         <script src="main.js"></script>
+      </p>
+</form>
+   </body>
+</html>

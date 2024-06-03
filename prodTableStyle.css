@@ -1,0 +1,29 @@
+
+#tbodyRows
+{
+    width:10%;
+    table-layout: fixed;
+color: red; 
+}
+
+
+tr
+{
+	padding: auto;
+   width:10%;
+    height: 50px;
+color: red;}
+
+td
+{
+   width:100%
+	height: 50px;
+color: red; 
+}
+
+img{
+    
+    width: 300px;
+border-radius: 50%;
+float:right;
+}

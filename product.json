@@ -1,0 +1,89 @@
+[
+    {
+        "prodID": 101,
+        "prodImg":"IcedCoffee.jpg",
+        "prodName": "Signature Iced Coffee",
+        "prodDesc": "Hey there! Have you tried our homemade cold brew mixed with a deliciously sweet and creamy drink? It's the perfect way to satisfy your sugar cravings!",
+        "prodPrice": 4.95
+
+    },
+
+    {
+        "prodID": 102,
+        "prodImg":"Americano.jpg",
+        "prodName": "Americano",
+        "prodDesc": "Give a simple Americano a try today and experience the timeless appeal of this classic coffee drink for yourself"
+        "prodPrice": 3.45
+	      },
+
+    {
+        "prodID": 103,
+        "prodImg": "Espresso.jpg",
+        "prodName": "Espresso",
+        "prodDesc": "Treat yourself to a simple shot of Espresso from our local beans and experience the unique flavor and aroma that only a true Special Coffee Connisseur can provide",
+        "prodPrice": 3.95
+	  
+    },
+
+    {
+        "prodID": 104,
+        "prodImg":"EspressoMacchiato.jpg",
+        "prodName": "Espresso Macchiato",
+        "prodDesc": "What really sets an Espresso Macchiato apart is the way that the milk interacts with the coffee itself. "
+        "prodPrice": 4.05
+	  
+    },
+
+    {
+        "prodID": 105,
+        "prodImg":"ArlingtonBeans.jpg",
+        "prodName": "Arlington Made Coffee Beans",
+        "prodDesc": "These beans are famous for their rich, full-bodied flavor and are carefully roasted to perfection to bring out their unique character and aroma",
+        "prodPrice": 10.99
+	  
+    },
+
+    {
+        "prodID": 106,
+        "prodImg": "Mocha.jpg",
+        "prodName": "Cafe Mocha",
+        "prodDesc": "Our signature seasonal drink is the perfect combination of fall, winter, and Christmas flavors, all rolled into one delicious and comforting beverage.",
+        "prodPrice": 4.95
+	  
+    },
+
+    {
+        "prodID": 107,
+        "prodImg": "Frap.jpg",
+        "prodName":"Frappuccino",
+        "prodDesc": "This delicious cold drink is the ultimate combination of sweet and refreshing, with a creamy blend of coffee, milk, and ice that's sure to satisfy any craving.",
+        "prodPrice":5.45
+	  
+    },
+
+    {
+        "prodID":108,
+        "prodImg": "MasalaChai.jpg",
+        "prodName": "Masala Chai",
+        "prodDesc": "With every sip, you'll experience the warm and comforting flavors of ginger, mint, and other aromatic spices, combined perfectly with the rich and bold taste of our high-quality tea. ",
+        "prodPrice":3.95
+	      },
+
+    {
+        "prodID": 109,
+        "prodImg": "VanillaLatte.jpg",
+        "prodName": "Vanilla Latte",
+        "prodDesc": "What really sets our Vanilla Latte apart is the care and attention that goes into every cup. ",
+        "prodPrice":3.45
+	  
+    },
+
+    {
+        "prodID": 110,
+        "prodImg": "Milk.jpg",
+        "prodName": "Small Milk Cup",
+        "prodDesc": "A small glass of milk",
+        "prodPrice":2.95
+	  
+    }
+]

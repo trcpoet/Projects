@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- Tahsin Rahman Chowdhury
+    INSY 4315-001 
+    1001758973-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Special Coffee Connoisseur!</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+        window.onload = function() {
+            function createCookie(name,value,days) {
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime()+(days*24*60*60*1000));
+                    var expires = "; expires="+date.toGMTString();
+                }
+                else var expires = "";
+                document.cookie = name+"="+value+expires+"; path=/";
+            }
+            // Function to read cookie
+            function readCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return null;
+            }
+            if(person=readCookie("person")) {
+                //show the greeting
+                document.getElementById("personaltext").innerHTML = "Welcome, " + person + ". We hope you will enjoy your Special Coffee Connoisseur experience!"
+                document.getElementById("providename").innerText = "Please click here if you are not " + person+ "."
+
+            } else {
+                // Other wise ask user to provide username
+                document.getElementById("providename").innerText = "Please click here to provide your name."
+            }
+            // When the provide tag is clicked
+            document.getElementById("providename").addEventListener("click", function(){ 
+                // Prompting user to write name
+                var person = prompt("Please enter your name:");
+                // If the user doent enter anything then do nothing
+                if (person == null || person == "") {
+                    // User cancelled or added no value
+                } else {
+                    // If user provided some data
+                    // Build greeting
+                    document.getElementById("personaltext").innerHTML = "Welcome, " + person + ". We hope you will enjoy your Special Coffee Connoisseur experience!"
+                    // Add Cookie with that data
+                    createCookie("person", person, 21);
+                    // Modify anchor tag
+                    document.getElementById("providename").innerText = "Please click here if you are not " + person+ "."
+                }
+            });
+
+            // Random Number
+            // Run the function inside the setTimeOut after 10000 miliseconds i,e 10 seconds
+            setTimeout(function(){
+                // Generate a random number
+                var random = Math.round(Math.random() * 10000);
+                // Finding the remainder when divisible by 3
+                var isNotDivisible = (random%3==0);
+                // If the remainder is 0 it means the random number was divisible by 3
+                if(!isNotDivisible) {
+                    // If the number is divisible by 3 then show alert and redirect tot he survey page
+                    alert("You have been randomly selected to participate in a customer satisfaction survey.")
+  window.open("4315_Lab1_trc8973.html")
+                }
+            }, 3000);
+        }
+  </script>
+</head>
+<body id="body">
+  <h1 id="h1">Thank You for Choosing Special Coffee Connoisseur©</h1><img src="logo.jpg" alt="logo" style="float: right; width: 20%; height: auto ; border-radius: 50%">
+  <div>
+    Here at Special Coffee Connoisseur we want to provide the best experience when it comes to Coffees. Special Coffee Connoisseur is slowly growing to provide different types of coffees and drinks to give our customers options for the best coffee. We want to have a good balance between variety and satisfaction compared to other cafes places. We also want to provide a setting that customers would want to stay and work while drinking their coffee. Thank you for checking out our page and our shop!
+  </div><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <img src="coffee%202.jpg" alt="coffee2" style="float: left; width: 20%; height: auto; border-radius: 50%">
+  <div>
+  <p id="personaltext" style="text-align:left;">Want a more personalized experience on our website?</p><a href="#" id="providename"></a> <img src="coffee%203.png" alt="coffee3" style="position: fixed; bottom: 0px; right: 0px; width=" height="70"></div>
+</body>
+</html>
