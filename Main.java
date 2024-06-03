@@ -1,22 +1,34 @@
-package com.example.finalexam;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+package com.example.training2;
 
 public class Main {
-    public static void main(String[] args) {
 
-        Pattern pattern = Pattern.compile("^(\\d+) divided by (\\d+)$");
-        Matcher matcher = pattern.matcher("10 divided by 2");
+    public static void main(String[] args) throws InterruptedException {
 
-        if (matcher.find()){
-            String simplified = "result " + matcher.replaceFirst("$1/$2");
-            System.out.println(simplified);
-            int result = Integer.valueOf(matcher.group(1)) / Integer.valueOf(matcher.group(2));
-            System.out.println(result);
+        for (int i=0; i<3; i++) {
+            MyThreads thread1 = new MyThreads(i);
+            thread1.start();
+            thread1.join();
+            MyRunnable runnable1 = new MyRunnable();//implements Runnable in MyRunnable class to create a thread
+            Thread thread2 = new Thread(runnable1);
+            thread2.start();
         }
 
 
+//        MyThreads thread1 = new MyThreads();//Extends Thread from MyThread class to create a thread
+//
+//        MyRunnable runnable1 = new MyRunnable();//implements Runnable in MyRunnable class to create a thread
+//        Thread thread2 = new Thread(runnable1);
+//
+//
+//        thread2.start();
 
-        }
+
+
+        // TODO Auto-generated method stub
+
     }
+
+
+}
+
+
